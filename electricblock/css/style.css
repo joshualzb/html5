@@ -1,0 +1,132 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #666666;
+}
+
+header {
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: solid 1px rgb(133, 133, 133);
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    line-height: 80px;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: xx-large;
+    margin: 0;
+    color: #FFF;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    margin: 120px auto;
+}
+
+.container .palette {
+    display: inline-block;
+    outline: solid 1px #1B9AF7;
+    position: relative;
+}
+
+.container .palette img {
+    width: 1024px;
+    height: 822px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container .palette .point {
+    background-color: #b1b1b1;
+    border: solid 2px #2f2f2f;
+    position: absolute;
+    border-radius: 100%;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.container .palette .point:active {
+    background-color: #088ef0;
+    border: solid 2px #0880d7;
+    transform: scale(1.1);
+}
+
+.container .palette .point.hang-up {
+    background-color: #088ef0;
+    border: solid 2px #00365d;
+}
+
+.container .palette .point.active {
+    background-color: #FEAE1B;
+    border: solid 2px #b57500;
+}
+
+.container .palette .line {
+    position: absolute;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.container .palette .line .v {
+    width: 2px;
+    background-color: #FEAE1B;
+    border: solid 1px #b57500;
+    border-radius: 1px;
+}
+
+.container .palette .line .h {
+    height: 2px;
+    background-color: #FEAE1B;
+    border: solid 1px #b57500;
+    border-radius: 1px;
+}
+
+.container .palette .line .close {
+    width: 20px;
+    height: 20px;
+    background-color: #FEAE1B;
+    border: solid 1px #b57500;
+    border-radius: 100%;
+}
+
+.container .palette .line .close:after {
+    content: "\2715";
+    padding: 2px 0;
+    display: block;
+    line-height: 100%;
+    font-weight: bold;
+    color: #ff1111;
+}
+
+footer {
+    display: block;
+    position: fixed;
+    text-align: right;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    border-top: solid 1px rgb(133, 133, 133);
+    background-color: rgb(0, 0, 0);
+}
+
+footer .button {
+    margin-right: 2rem;
+    z-index: 1;
+}
